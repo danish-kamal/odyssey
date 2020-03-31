@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "docs": "yarn --cwd packages/docs start"
+    "docs": "yarn --cwd packages/docs start",
+    "patternlab": "yarn --cwd packages/patternlab pl:serve"
   },
   "engines": {
     "yarn": "^1.15.2",

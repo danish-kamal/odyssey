@@ -290,6 +290,7 @@ You can also nest `strong`. Doing so will provide additional style.
       he begs: <strong>never feed him <strong>after midnight</strong></strong>.
     </p>
   </div>
+</figure>
 
 ```html
 <p>

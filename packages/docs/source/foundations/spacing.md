@@ -82,4 +82,4 @@
       </tr>
     </tbody>
   </table>
-</table>
+</figure>

@@ -1,7 +1,3 @@
----
-layout: Component
----
-
 # Buttons
 
 Buttons are primarily used for in-page interactions like form submissions.

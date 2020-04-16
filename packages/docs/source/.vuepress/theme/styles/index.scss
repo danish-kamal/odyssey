@@ -1,0 +1,88 @@
+@import '../../../../../odyssey/src/scss/odyssey';
+
+body,html {
+  margin: 0;
+}
+
+@media only screen and (min-width: 75ch){
+  .odo {
+      display: grid;
+      grid-template-columns: minmax(auto, -webkit-max-content) minmax(auto, auto);
+      grid-template-columns: minmax(auto, max-content) minmax(auto, auto);
+  }
+}
+
+.odo-header {
+  display: block;
+  padding: 1.5rem 3rem;
+  background-image: linear-gradient(to bottom, #124a94 -12rem, #004d6b 75vh);
+  background-repeat: no-repeat;
+  color: #fff;
+
+  .odo-header-title {
+    font-size: 0;
+  }
+
+  .odo-header-logo {
+    height: 1.5rem;
+    fill: #ffffff;
+  }
+}
+
+.odo-nav {
+  display: grid;
+  grid-template-columns: minmax(auto, auto) minmax(auto, auto);
+  column-gap: 1.5rem;
+  text-transform: capitalize;
+
+  @media only screen and (min-width: 75ch) {
+    display: block;
+  }
+}
+
+.odo-nav-heading {
+  margin: 0 0 0.75rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.odo-nav-list {
+  margin: 0 0 1.5rem;
+  list-style-type: none;
+  font-size: 1rem;
+  font-weight: 400;
+
+  .odo-nav-list-item {
+    margin-bottom: 0.375rem;
+
+    a {
+      position: relative;
+      color: #ffffff;
+      text-decoration: none;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        transition: border-bottom-color 100ms linear;
+        border-bottom: 1px solid;
+        border-bottom-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}
+
+.odo-main {
+  display: grid;
+  grid-template-columns: minmax(auto, 64em) minmax(auto, auto);
+  min-width: 0;
+  box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+}
+
+.odo-article {
+  min-width: 0;
+  padding: 1.5rem 3rem;
+}

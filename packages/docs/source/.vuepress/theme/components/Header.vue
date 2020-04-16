@@ -15,9 +15,9 @@
 
     <nav class="odo-nav">
       <section v-for="(item, index) in items">
-        <h1>{{item.title}}</h1>
+        <h1 class="odo-nav-heading">{{item.title}}</h1>
         <ul class="odo-nav-list" v-if="item.children">
-          <li v-for="itemx in item.children" v-if="itemx.isVisible">
+          <li v-for="itemx in item.children" v-if="itemx.isVisible" class="odo-nav-list-item">
             <a :href="itemx.path">{{itemx.title}}</a>
           </li>
         </ul>

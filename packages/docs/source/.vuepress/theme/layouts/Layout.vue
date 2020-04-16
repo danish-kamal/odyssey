@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="odo">
     <Header
       :items="HeaderItems"
     >

@@ -19,6 +19,7 @@ module.exports = {
           { title: 'Elements', path: '/foundations/elements', isVisible: true },
           { title: 'Spacing', path: '/foundations/spacing', isVisible: true },
           { title: 'Type', path: '/foundations/type', isVisible: true },
+          { title: 'Grid', path: '/foundations/grid', isVisible: false },
         ]
       },
       {

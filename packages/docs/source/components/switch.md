@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Switch
 > A switch is any control which presents two mutually exclusive options or states. - <cite><a href='https://developer.mozilla.org/en-US/docs/Archive/B2G_OS/Firefox_OS_apps/Building_blocks/1.x/Switch'>MDN</a></cite>
 

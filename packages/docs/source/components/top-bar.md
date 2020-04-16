@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Top bar
 
 <aside class="ods-callout is-ods-callout-warning" aria-live="polite">

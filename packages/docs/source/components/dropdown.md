@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Dropdown
 
 <aside class="ods-callout is-ods-callout-warning" aria-live="polite">

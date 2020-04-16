@@ -1,0 +1,32 @@
+// @import "mixins/border-radius"
+  
+default-border-radius = 12px
+box-shadow-md = 4px 4px 0 #f5f5f6
+box-shadow-lg = 8px 8px 0 #f5f5f6
+
+color-gray-000 = #fafafa
+color-gray-100 = #e4e5e7
+color-gray-200 = #cdd1d3
+color-gray-300 = #b7bcc0
+color-gray-400 = #a0a7ac
+color-gray-500 = #899298
+color-gray-600 = #737d85
+color-gray-700 = #5c6971
+color-gray-800 = #46545e
+color-gray-900 = #2f3f4a
+
+.layout-default
+  border: 1px solid green
+
+.layout-foundation
+  border: 1px solid blue
+  width: 768px;
+  border-radius default-border-radius
+
+.layout-component
+  margin: 2rem auto 8rem;
+  border: 1px solid color-gray-300
+  width: 768px;
+  padding: 96px;
+  border-radius default-border-radius
+  box-shadow box-shadow-lg

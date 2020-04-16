@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Text Input
 
 >`<input>` elements of type "text" create basic single-line text fields. - <cite><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text'>MDN</a></cite>

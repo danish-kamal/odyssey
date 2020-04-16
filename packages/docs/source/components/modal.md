@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Modals
 
 ## General guidelines

@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Select
 
 The Select input is a form element that provides a menu of options for the user to... select.

@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Card
 
 Cards are used to group media, copy, and actions together when representing an object in a set.

@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Links
 
 Links are navigation elements displayed as text. A link can open another page or jump to a section of a page.

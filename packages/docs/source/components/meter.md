@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Meter
 
 > The `<meter>` element represents either a scalar value within a known range or a fractional value. - <cite><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter' target="_blank" rel="noopener">MDN</a></cite>

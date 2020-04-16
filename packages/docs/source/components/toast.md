@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Toast
 
 Toasts are non-disruptive messaging components that appear at the bottom right of the interface to provide quick, at-a-glance feedback on the outcome of an action.

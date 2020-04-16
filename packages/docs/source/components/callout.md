@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Callout
 
 Callouts are an inline messaging component that communicate in a non-blocking way. Use callouts to provide additional context that can't be provided by the relevant component.

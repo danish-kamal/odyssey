@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Banner
 
 <figure class="nimatron--example">

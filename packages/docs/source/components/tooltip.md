@@ -1,3 +1,7 @@
+---
+layout: Component
+---
+
 # Tooltip
 
 A contextual pop-up that provides a label for or description of an element.

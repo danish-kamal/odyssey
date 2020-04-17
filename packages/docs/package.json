@@ -27,6 +27,8 @@
     "node-sass": "4.13.1",
     "prismjs": "^1.14.0",
     "sass-loader": "8.0.2",
-    "vuepress": "1.4.0"
+    "vuepress": "1.4.0",
+    "vuepress-plugin-clean-urls": "^1.1.1",
+    "vuepress-plugin-container": "^2.1.3"
   }
 }

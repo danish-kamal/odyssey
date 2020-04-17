@@ -1,5 +1,5 @@
 <template>
-  <div class="odo">
+  <div class="nimatron">
     <Header
       :items="HeaderItems"
     >
@@ -10,8 +10,8 @@
         <slot name="Header-bottom" />
       </template>
     </Header>
-    <main class="odo-main">
-      <article class="odo-article">
+    <main class="nimatron--main">
+      <article class="nimatron--article">
         <Content />
       </article>
     </main>

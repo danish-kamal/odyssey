@@ -1,9 +1,9 @@
 <template>
-  <header class="odo-header">
-  <h1 class="odo-header-title">
+  <header class="nimatron--header">
+  <h1 class="nimatron--header-title">
     <a href="/">
       Odyssey, the Okta Design System
-      <svg class="odo-header-logo" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 400 134.7" aria-labelledby="okta-logo--header">
+      <svg class="nimatron--header-logo" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 400 134.7" aria-labelledby="okta-logo--header">
         <title id="okta-logo--header">the okta logo</title>
         <path d="M50.3 33.8C22.5 33.8 0 56.3 0 84.1s22.5 50.3 50.3 50.3 50.3-22.5 50.3-50.3-22.5-50.3-50.3-50.3zm0 75.5c-13.9 0-25.2-11.3-25.2-25.2s11.3-25.2 25.2-25.2 25.2 11.3 25.2 25.2-11.3 25.2-25.2 25.2zM138.7 101c0-4 4.8-5.9 7.6-3.1 12.6 12.8 33.4 34.8 33.5 34.9.3.3.6.8 1.8 1.2.5.2 1.3.2 2.2.2h22.7c4.1 0 5.3-4.7 3.4-7.1l-37.6-38.5-2-2c-4.3-5.1-3.8-7.1 1.1-12.3L201.2 41c1.9-2.4.7-7-3.5-7h-20.6c-.8 0-1.4 0-2 .2-1.2.4-1.7.8-2 1.2-.1.1-16.6 17.9-26.8 28.8-2.8 3-7.8 1-7.8-3.1V4c0-2.9-2.4-4-4.3-4h-16.8c-2.9 0-4.3 1.9-4.3 3.6v126.6c0 2.9 2.4 3.7 4.4 3.7h16.8c2.6 0 4.3-1.9 4.3-3.8V101zM275.9 129.6l-1.8-16.8c-.2-2.3-2.4-3.9-4.7-3.5-1.3.2-2.6.3-3.9.3-13.4 0-24.3-10.5-25.1-23.8v-22c0-2.7 2-4.9 4.7-4.9h22.5c1.6 0 4-1.4 4-4.3V38.7c0-3.1-2-4.7-3.8-4.7h-22.7c-2.6 0-4.7-1.9-4.8-4.5V4c0-1.6-1.2-4-4.3-4h-16.7c-2.1 0-4.1 1.3-4.1 3.9v81.9c.7 27.2 23 48.9 50.3 48.9 2.3 0 4.5-.2 6.7-.5 2.4-.3 4-2.3 3.7-4.6z" class="st0"></path>
         <g>
@@ -13,11 +13,11 @@
     </a>
   </h1>
 
-    <nav class="odo-nav">
-      <section v-for="(item, index) in items">
-        <h1 class="odo-nav-heading">{{item.title}}</h1>
-        <ul class="odo-nav-list" v-if="item.children">
-          <li v-for="itemx in item.children" v-if="itemx.isVisible" class="odo-nav-list-item">
+    <nav class="nimatron--nav">
+      <section class="nimatron--nav-section" v-for="(item, index) in items">
+        <h1 class="nimatron--nav-heading">{{item.title}}</h1>
+        <ul class="nimatron--nav-list" v-if="item.children">
+          <li v-for="itemx in item.children" v-if="itemx.isVisible" class="nimatron--nav-item">
             <a :href="itemx.path">{{itemx.title}}</a>
           </li>
         </ul>

@@ -1,8 +1,6 @@
 // .vuepress/config.js
 
 module.exports = {
-  title: 'Odyssey',
-  description: 'The Okta design system',
   themeConfig: {
     nav: [
       {
@@ -48,5 +46,15 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    [
+      'vuepress-plugin-clean-urls',
+      {
+        normalSuffix: '/',
+        indexSuffix: '/',
+        notFoundPath: '/404.html',
+      },
+    ],
+  ],
 }

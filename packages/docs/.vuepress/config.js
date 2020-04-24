@@ -2,6 +2,17 @@
 
 module.exports = {
   theme: '@okta/vuepress-theme-nimatron',
+  dest: 'dist',
+  head: [
+    [
+      'meta', { 
+        'og:title': 'Odyssey, the Okta design system',
+        'og:type': 'article',
+        'og:url': 'https://design-docs.trexcloud.com',
+        'og:image': 'https://www.okta.com/sites/default/files/okta-logo-onblue.png',
+      }
+    ],
+  ],
   themeConfig: {
     nav: [
       {

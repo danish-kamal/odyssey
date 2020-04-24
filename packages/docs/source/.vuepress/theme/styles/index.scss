@@ -1,10 +1,8 @@
-// Import Odyssey
-// TODO: remove this relative path after moving to webpack
-@import '../../../../../odyssey/src/scss/odyssey';
+@import '~@okta/odyssey';
+@import '~prismjs/themes/prism.css';
 
 // Nimatron Specific Styles
 @import 'samples';
-@import 'prism-ext';
 
 .is-not-provisional {
   display: none;

@@ -13,7 +13,7 @@
     <main class="nimatron--main">
       <article class="nimatron--article">
         <transition name="fade">
-          <Content />
+            <Content />
         </transition>
       </article>
     </main>

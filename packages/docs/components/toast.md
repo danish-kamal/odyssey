@@ -32,7 +32,7 @@ Toasts are non-disruptive messaging components that appear at the bottom right o
 
 <ul>
     <li>The width of a toast is consistent, ensuring multiple toast instances are vertically aligned.</li>
-    <li>The height can vary based on content elements.<li>
+    <li>The height can vary based on content elements.</li>
 </ul>
 
 #### Quantity
@@ -114,6 +114,7 @@ Responsive, fixed to the bottom right corner of the viewport.
                   </figure>
               </ul>
           </td>
+        </tr>
       </tbody>
   </table>
 </figure>

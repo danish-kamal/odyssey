@@ -1,6 +1,7 @@
 // .vuepress/config.js
 
 module.exports = {
+  theme: '@okta/vuepress-theme-nimatron',
   themeConfig: {
     nav: [
       {
@@ -46,15 +47,5 @@ module.exports = {
         ],
       },
     ]
-  },
-  plugins: [
-    [
-      'vuepress-plugin-clean-urls',
-      {
-        normalSuffix: '/',
-        indexSuffix: '/',
-        notFoundlink: '/404.html',
-      },
-    ],
-  ],
+  }
 }

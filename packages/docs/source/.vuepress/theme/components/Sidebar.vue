@@ -18,7 +18,7 @@
         <h1 class="nimatron--nav-heading">{{item.title}}</h1>
         <ul class="nimatron--nav-list" v-if="item.children">
           <li v-for="itemx in item.children" v-if="itemx.isVisible" class="nimatron--nav-item">
-            <a :href="itemx.path">{{itemx.title}}</a>
+            <SidebarLink :item="itemx" />
           </li>
         </ul>
       </section>
@@ -28,7 +28,10 @@
 
 <script>
 export default {
-  name: 'Header',
-  props: ['items']
+  name: 'Sidebar',
+  props: ['items'],
+  components: {
+    SidebarLink: () => import('./SidebarLink.vue'),
+  },
 }
 </script>

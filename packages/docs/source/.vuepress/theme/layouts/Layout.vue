@@ -1,18 +1,20 @@
 <template>
   <div class="nimatron">
-    <Header
-      :items="HeaderItems"
+    <Sidebar
+      :items="SidebarItems"
     >
       <template #top>
-        <slot name="Header-top" />
+        <slot name="Sidebar-top" />
       </template>
       <template #bottom>
-        <slot name="Header-bottom" />
+        <slot name="Sidebar-bottom" />
       </template>
-    </Header>
+    </Sidebar>
     <main class="nimatron--main">
       <article class="nimatron--article">
-        <Content />
+        <transition name="fade">
+          <Content />
+        </transition>
       </article>
     </main>
   </div>
@@ -24,10 +26,11 @@ import { resolveSidebarItems } from '../utils'
 
 export default {
   components: {
-    Header: () => import('../components/Header.vue'),
+    Sidebar: () => import('../components/Sidebar.vue'),
+    Example: () => import('../global-components/Example.vue'),
   },
   computed: {
-    HeaderItems () {
+    SidebarItems () {
       return resolveSidebarItems(
         this.$page,
         this.$page.regularPath,

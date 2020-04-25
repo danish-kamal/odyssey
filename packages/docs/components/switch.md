@@ -101,20 +101,24 @@ The `aria-checked` attribute is required with either `true` or `false` values. `
 </ul>
 
 <script>
-// document.querySelectorAll(".switch").forEach(function(theSwitch) {
-//   theSwitch.addEventListener("click", handleClickEvent, false);
-// });
+export default {
+  mounted () { 
+    this.$el.querySelectorAll(".ods-switch").forEach(function(theSwitch) {
+      theSwitch.addEventListener("click", handleClickEvent, false);
+    });
+    function handleClickEvent(evt) {
+      let el = evt.target;
+      if (el.classList.contains('switch--dial')) {
+        el = el.parentNode;
+      }
+    
+      if (el.getAttribute("aria-checked") == "true") {
+          el.setAttribute("aria-checked", "false");
+      } else {
+          el.setAttribute("aria-checked", "true");
+      }
+    }
+  }
+}
 
-// function handleClickEvent(evt) {
-//   let el = evt.target;
-//   if (el.classList.contains('switch--dial')) {
-//     el = el.parentNode;
-//   }
- 
-//   if (el.getAttribute("aria-checked") == "true") {
-//       el.setAttribute("aria-checked", "false");
-//   } else {
-//       el.setAttribute("aria-checked", "true");
-//   }
-// }
 </script>

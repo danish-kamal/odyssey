@@ -166,6 +166,7 @@
     display: none;
   }
 }
+
 .nimatron--toc-list-link {
   position: relative;
   color: $text-sub;
@@ -231,12 +232,12 @@
     &::after {
       content: "This is a Don't.";
       position: absolute;
-      bottom: 0;
       right: 0;
+      bottom: 0;
       padding: 0 $small-spacing $small-spacing 0;
+      color: cv('danger', 'dark');
       font-size: ms(-1);
       font-weight: 600;
-      color: cv('danger', 'dark');
     }
   }
 }
@@ -257,36 +258,38 @@ h1 {
   }
 }
 
-.content__default {
-  & > h1,
-  & > h2,
-  & > h3,
-  & > h4,
-  & > h5,
-  & > h6 {
+.content__default { // stylelint-disable
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
     position: relative;
 
     .header-anchor {
-      opacity: 0;
       position: absolute;
       left: -30px;
       width: 30px;
+      opacity: 0;
       text-align: center;
-      text-decoration: none;;
+      text-decoration: none;
     }
 
     &:hover {
       .header-anchor {
-        opacity:1;
+        opacity: 1;
       }
     }
   }
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-leave-active,
+.fade-enter-active {
+  transition: opacity 0.5s;
 }
 
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-leave-to, /* .fade-leave-active below version 2.1.8 */
+.fade-enter {
   opacity: 0;
 }

@@ -493,7 +493,12 @@ While the browser support is strong and they are valid attributes, try to refrai
 
 This same advice applies to nested tables or hidden rows as well. While convenient for designers and useful for some users, they introduce accessibility problems that may make your data inaccessible to some users.
 
+
 <script>
-  // var checkbox = document.getElementById("checkbox-all");
-  // checkbox.indeterminate = true;
+export default {
+  mounted () { 
+    var checkbox = this.$el.querySelector("#checkbox-all");
+    checkbox.indeterminate = true;
+  }
+}
 </script>

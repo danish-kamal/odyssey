@@ -10,8 +10,23 @@ module.exports = {
         'og:type': 'article',
         'og:url': 'https://design-docs.trexcloud.com',
         'og:image': 'https://www.okta.com/sites/default/files/okta-logo-onblue.png',
+      },
+    ],
+    [
+      'script', { 
+        'src': 'https://unpkg.com/micromodal@0.3.2/dist/micromodal.min.js',
       }
     ],
+    [
+      'script', { 
+        'src': 'https://unpkg.com/choices.js@9.0.1/public/assets/scripts/choices.min.js',
+      }
+    ],
+  ],
+  // These plugins are required to instantiate choices.js and micromodal apropriately in our third party app.
+  plugins: [
+    require('./plugins/plugin-choices/index.js'),
+    require('./plugins/plugin-micromodal/index.js')
   ],
   themeConfig: {
     nav: [
